@@ -1,0 +1,91 @@
+.book_item{
+    display: flex;
+    padding: 10px;
+    background-color: #e2a856;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.image_text{
+    position: absolute;
+    z-index: 1;
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: none;
+    cursor: pointer;
+}
+
+.image:hover img {
+    filter: blur(1px) brightness(50%);
+    cursor: pointer;
+}
+
+.image:hover .image_text{
+    display: block;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+}
+
+.about-inner{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #73614d;
+}
+
+.submit_btn{
+    margin-top: 10px;;
+    display: flex;
+    justify-content: center;
+}
+
+.about-inner input {
+    width: 95%;
+}
+
+button{
+    background-color: #c95f13;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    color: #e9e3cb;
+}
+
+input {
+    background: transparent;
+    outline: none !important;
+    border: none;
+    color: #e9e3cb;
+    border-bottom: 1px solid #e2a856;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-bottom: 1px solid black;
+}
+
+input::placeholder{
+    color: #e9e3cb;
+}
+
+label{
+    color: #e9e3cb
+}
+
+button:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
